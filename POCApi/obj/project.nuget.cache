@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UdXbab0K92yeNjE7oSTfrGi4aKdZThg5cLBRJO/n+nfXNlKgTxvDz0U7Ugodu66QEW3X3QohnmPMw43Cx0/bZg==",
+  "dgSpecHash": "Ei6c10IZTxPqaRVuHERGxHwCvKBg/I167oxel/8dwrYMKIJjDVnnUO39PZDpOjTpCALuAAbx8dbCRYk7glxKpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCApi\\POCApi.csproj",
+  "projectFilePath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCApi\\POCApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhcadmin\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\nhcadmin\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

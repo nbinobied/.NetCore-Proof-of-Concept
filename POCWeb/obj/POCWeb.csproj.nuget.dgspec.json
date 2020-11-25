@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCWeb\\POCWeb.csproj": {}
+    "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCWeb\\POCWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCWeb\\POCWeb.csproj": {
+    "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCWeb\\POCWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCWeb\\POCWeb.csproj",
+        "projectUniqueName": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCWeb\\POCWeb.csproj",
         "projectName": "POCWeb",
-        "projectPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCWeb\\POCWeb.csproj",
+        "projectPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCWeb\\POCWeb.csproj",
         "packagesPath": "C:\\Users\\nhcadmin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCWeb\\obj\\",
+        "outputPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

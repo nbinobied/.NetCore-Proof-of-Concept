@@ -5822,11 +5822,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCApi\\POCApi.csproj",
+      "projectUniqueName": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCApi\\POCApi.csproj",
       "projectName": "POCApi",
-      "projectPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCApi\\POCApi.csproj",
+      "projectPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCApi\\POCApi.csproj",
       "packagesPath": "C:\\Users\\nhcadmin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\POC\\POCApi\\obj\\",
+      "outputPath": "C:\\Users\\NasserBinobied\\Documents\\Version Control\\GitHub\\.NetCore-Proof-of-Concept\\POCApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
