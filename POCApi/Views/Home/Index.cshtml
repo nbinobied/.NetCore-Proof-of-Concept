@@ -1,0 +1,62 @@
+﻿@model IEnumerable<POCWeb.Models.WeatherForecast>
+
+@{
+    var BaseUrl = @Model.FirstOrDefault().BaseUrl;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="@BaseUrl/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="@BaseUrl/img/logo.png" class="img-thumbnail">
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>
+                            Date
+                        </td>
+                        <td>
+                            TemperatureC
+                        </td>
+                        <td>
+                            Summary
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Date
+                            </td>
+                            <td>
+                                @item.TemperatureC
+                            </td>
+                            <td>
+                                @item.Summary
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - POCWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+</body>
+</html>
