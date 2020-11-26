@@ -9,7 +9,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="@BaseUrl/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="@BaseUrl/lib/vue/css/bootstrap-vue.min.css" />
 </head>
 <body>
     <header>
@@ -22,15 +24,16 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <td>
-                            Date
-                        </td>
-                        <td>
-                            TemperatureC
-                        </td>
-                        <td>
-                            Summary
-                        </td>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Date)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TemperatureC)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Summary)
+                        </th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,13 +41,13 @@
                     {
                         <tr>
                             <td>
-                                @item.Date
+                                @Html.DisplayFor(modelItem => item.Date)
                             </td>
                             <td>
-                                @item.TemperatureC
+                                @Html.DisplayFor(modelItem => item.TemperatureC)
                             </td>
                             <td>
-                                @item.Summary
+                                @Html.DisplayFor(modelItem => item.Summary)
                             </td>
                         </tr>
                     }
@@ -52,11 +55,22 @@
             </table>
         </main>
     </div>
+    <div class="container">
+        <qrcode value="Hello, World!" :options="{ width: 200 }"></qrcode>
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - POCWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
+
+    <script src="@BaseUrl/lib/vue/js/vue.js"></script>
+    <script src="@BaseUrl/lib/vue/js/bootstrap-vue.min.js"></script>
+    <script src="@BaseUrl/lib/vue/js/vee-validate.full.min.js"></script>
+    <script src="@BaseUrl/lib/vue/js/axios.min.js"></script>
+    <script src="@BaseUrl/lib/vue/js/vue-qrcode/vue-qrcode.js"></script>
+    <script src="@BaseUrl/js/app.js"></script>
+
 </body>
 </html>

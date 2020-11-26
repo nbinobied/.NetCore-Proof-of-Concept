@@ -9,7 +9,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="@BaseUrl/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="@BaseUrl/lib/vue/css/bootstrap-vue.min.css" />
 </head>
 <body>
     <header>
@@ -52,11 +54,22 @@
             </table>
         </main>
     </div>
+    <div class="container">
+        <qrcode value="Hello, World!" :options="{ width: 200 }"></qrcode>
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - POCWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
+
+    <script src="@BaseUrl/lib/vue/js/vue.js"></script>
+    <script src="@BaseUrl/lib/vue/js/bootstrap-vue.min.js"></script>
+    <script src="@BaseUrl/lib/vue/js/vee-validate.full.min.js"></script>
+    <script src="@BaseUrl/lib/vue/js/axios.min.js"></script>
+    <script src="@BaseUrl/lib/vue/js/vue-qrcode/vue-qrcode.js"></script>
+    <script src="@BaseUrl/js/app.js"></script>
+
 </body>
 </html>
