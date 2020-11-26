@@ -44,6 +44,18 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "HangFire.Core": {
+              "target": "Package",
+              "version": "[1.7.18, )"
+            },
+            "HangFire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.18, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.18, )"
+            },
             "Microsoft.AspNetCore.Antiforgery": {
               "target": "Package",
               "version": "[2.2.0, )"

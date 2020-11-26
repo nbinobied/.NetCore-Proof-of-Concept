@@ -7,6 +7,9 @@
 	  <UserSecretsId>2b1e9976-d4c9-4c5e-b29d-c3ab1195dba7</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.18" />
+    <PackageReference Include="HangFire.Core" Version="1.7.18" />
+    <PackageReference Include="HangFire.SqlServer" Version="1.7.18" />
     <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
