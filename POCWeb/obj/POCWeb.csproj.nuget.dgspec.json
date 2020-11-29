@@ -81,10 +81,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
-            },
-            "RazorLight": {
-              "target": "Package",
-              "version": "[2.0.0-rc.2, )"
             }
           },
           "imports": [
