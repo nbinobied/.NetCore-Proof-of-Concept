@@ -74,6 +74,8 @@ namespace POCApi.Controllers
                     new ObjectSettings() {
                         PagesCount = true,
                         HtmlContent = page,
+                        UseExternalLinks = true,
+                        UseLocalLinks = true,
                         WebSettings = { DefaultEncoding = "utf-8" },
                         HeaderSettings = { FontSize = 9, Right = "Page [page] of [toPage]", Line = true, Spacing = 2.812 }
                     }

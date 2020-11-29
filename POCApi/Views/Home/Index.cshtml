@@ -14,62 +14,71 @@
     <link rel="stylesheet" href="@BaseUrl/lib/vue/css/bootstrap-vue.min.css" />
 </head>
 <body>
-    <header>
+    <div id="app">
+        <header>
+            <div class="container">
+                <img src="@BaseUrl/img/logo.png" class="img-thumbnail">
+            </div>
+        </header>
         <div class="container">
-            <img src="@BaseUrl/img/logo.png" class="img-thumbnail">
-        </div>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <td>
-                            Date
-                        </td>
-                        <td>
-                            TemperatureC
-                        </td>
-                        <td>
-                            Summary
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
+            <main role="main" class="pb-3">
+                <table class="table">
+                    <thead>
                         <tr>
                             <td>
-                                @item.Date
+                                Date
                             </td>
                             <td>
-                                @item.TemperatureC
+                                TemperatureC
                             </td>
                             <td>
-                                @item.Summary
+                                Summary
                             </td>
                         </tr>
-                    }
-                </tbody>
-            </table>
-        </main>
-    </div>
-    <div class="container">
-        <qrcode value="Hello, World!" :options="{ width: 200 }"></qrcode>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - POCWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Date
+                                </td>
+                                <td>
+                                    @item.TemperatureC
+                                </td>
+                                <td>
+                                    @item.Summary
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </main>
         </div>
-    </footer>
+        <div class="container">
+            <div id="qrcode"></div>
+        </div>
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2020 - POCWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+        </footer>
+        <p id="log"></p>
+    </div>
 
-    <script src="@BaseUrl/lib/vue/js/vue.js"></script>
-    <script src="@BaseUrl/lib/vue/js/bootstrap-vue.min.js"></script>
-    <script src="@BaseUrl/lib/vue/js/vee-validate.full.min.js"></script>
-    <script src="@BaseUrl/lib/vue/js/axios.min.js"></script>
-    <script src="@BaseUrl/lib/vue/js/vue-qrcode/vue-qrcode.js"></script>
-    <script src="@BaseUrl/js/app.js"></script>
+    <script src="@BaseUrl/js/qrcode.js"></script>
 
+    <script>
+            try {
+                new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+
+                var c = document.getElementById("log");
+                c.innerHTML = "printed";
+            }
+            catch (err) {
+                var c = document.getElementById("log");
+                c.innerHTML = "catch: " + err.messge;
+            }
+    </script>
 </body>
 </html>
